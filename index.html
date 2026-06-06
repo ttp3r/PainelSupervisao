@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Painel de Supervisão Operacional</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>PSO</h2>
+            <span>Painel Supervisão</span>
+        </div>
+
+        <nav>
+
+            <button class="menu-item ativo">
+                Dashboard
+            </button>
+
+            <button class="menu-item">
+                Comercial
+            </button>
+
+            <button class="menu-item">
+                Atendimento
+            </button>
+
+            <button class="menu-item">
+                Serviços
+            </button>
+
+            <button class="menu-item">
+                Equipe
+            </button>
+
+            <button class="menu-item">
+                Banco de Horas
+            </button>
+
+            <button class="menu-item">
+                Demandas
+            </button>
+
+            <button class="menu-item">
+                Kanban
+            </button>
+
+            <button class="menu-item">
+                Alertas
+            </button>
+
+        </nav>
+
+    </aside>
+
+    <main class="conteudo">
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>
+                    Painel de Supervisão Operacional
+                </h1>
+
+                <p>
+                    Indicadores comerciais, equipe e projetos
+                </p>
+
+            </div>
+
+            <div class="ultima-sync">
+
+                <span>Última sincronização</span>
+
+                <strong id="ultima-atualizacao">
+                    Carregando...
+                </strong>
+
+            </div>
+
+        </header>
+
+        <section class="kpis">
+
+            <div id="cards-kpi" class="cards-grid"></div>
+
+        </section>
+
+        <section class="graficos">
+
+            <div class="grafico-card">
+
+                <h2>Faturamento por Canal</h2>
+
+                <canvas id="graficoFaturamento"></canvas>
+
+            </div>
+
+            <div class="grafico-card">
+
+                <h2>Novas x Recorrentes</h2>
+
+                <canvas id="graficoClientes"></canvas>
+
+            </div>
+
+        </section>
+
+        <section class="bloco">
+
+            <h2>
+                Desempenho da Equipe
+            </h2>
+
+            <div
+                id="cards-equipe"
+                class="cards-equipe">
+
+            </div>
+
+        </section>
+
+        <section class="bloco">
+
+            <h2>
+                Banco de Horas
+            </h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Nome</th>
+                        <th>Saldo</th>
+                        <th>Atrasos</th>
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="tabela-ponto">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <section class="bloco">
+
+            <h2>
+                Minhas Demandas
+            </h2>
+
+            <div
+                id="cards-demandas"
+                class="cards-demandas">
+
+            </div>
+
+        </section>
+
+        <section class="bloco">
+
+            <h2>
+                Alertas Operacionais
+            </h2>
+
+            <div
+                id="lista-alertas">
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/dados.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
