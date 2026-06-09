@@ -25,44 +25,31 @@
 
         <nav>
 
-            <button class="menu-item ativo">
-                Dashboard
-            </button>
+    <a href="#dashboard" class="menu-item ativo">
+        Dashboard
+    </a>
 
-            <button class="menu-item">
-                Comercial
-            </button>
+    <a href="#comercial" class="menu-item">
+        Comercial
+    </a>
 
-            <button class="menu-item">
-                Atendimento
-            </button>
+    <a href="#equipe" class="menu-item">
+        Equipe
+    </a>
 
-            <button class="menu-item">
-                Serviços
-            </button>
+    <a href="#banco-horas" class="menu-item">
+        Banco de Horas
+    </a>
 
-            <button class="menu-item">
-                Equipe
-            </button>
+    <a href="#demandas" class="menu-item">
+        Demandas
+    </a>
 
-            <button class="menu-item">
-                Banco de Horas
-            </button>
+    <a href="#alertas" class="menu-item">
+        Alertas
+    </a>
 
-            <button class="menu-item">
-                Demandas
-            </button>
-
-            <button class="menu-item">
-                Kanban
-            </button>
-
-            <button class="menu-item">
-                Alertas
-            </button>
-
-        </nav>
-
+</nav>
     </aside>
 
     <main class="conteudo">
@@ -93,13 +80,13 @@
 
         </header>
 
-        <section class="kpis">
+        <section id="dashboard" class="kpis">
 
             <div id="cards-kpi" class="cards-grid"></div>
 
         </section>
 
-        <section class="graficos">
+        <section id="comercial" class="graficos">
 
             <div class="grafico-card">
 
@@ -119,11 +106,11 @@
 
         </section>
 
-        <section class="bloco">
+        <section id="equipe" class="bloco">
 
-            <h2>
-                Desempenho da Equipe
-            </h2>
+    <h2>
+        Desempenho da Equipe
+    </h2>
 
             <div
                 id="cards-equipe"
@@ -133,11 +120,11 @@
 
         </section>
 
-        <section class="bloco">
+        <section id="banco-horas" class="bloco">
 
-            <h2>
-                Banco de Horas
-            </h2>
+    <h2>
+        Banco de Horas
+    </h2>
 
             <table>
 
@@ -162,12 +149,11 @@
 
         </section>
 
-        <section class="bloco">
+        <section id="demandas" class="bloco">
 
-            <h2>
-                Minhas Demandas
-            </h2>
-
+    <h2>
+        Minhas Demandas
+    </h2>
             <div
                 id="cards-demandas"
                 class="cards-demandas">
@@ -176,11 +162,11 @@
 
         </section>
 
-        <section class="bloco">
+        <section id="alertas" class="bloco">
 
-            <h2>
-                Alertas Operacionais
-            </h2>
+    <h2>
+        Alertas Operacionais
+    </h2>
 
             <div
                 id="lista-alertas">
@@ -193,8 +179,9 @@
 
 </div>
 
-<script src="js/dados.js"></script>
-<script src="js/dashboard.js"></script>
+
+<script src="dados.js"></script>
+<script src="dashboard.js"></script>
 
 </body>
 </html>

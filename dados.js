@@ -59,3 +59,40 @@ const demandas = [
     status: "Revisão"
   }
 ];
+
+const bancoHoras = [
+  {
+    nome: "Rafaela Silva",
+    saldo: "+12h",
+    atrasos: 0,
+    status: "OK"
+  },
+  {
+    nome: "Maria Luisa",
+    saldo: "+8h",
+    atrasos: 1,
+    status: "Atenção"
+  },
+  {
+    nome: "Verena Machado",
+    saldo: "-3h",
+    atrasos: 4,
+    status: "Crítico"
+  }
+];
+
+const alertas = [
+  "Meta de conversão abaixo do esperado no canal WhatsApp.",
+  "3 demandas estão próximas do prazo final.",
+  "Banco de horas negativo para 1 colaborador."
+];
+
+const faturamentoCanal = {
+  labels: ["WhatsApp", "Loja", "Site", "Marketplace"],
+  valores: [850000, 520000, 430000, 350000]
+};
+
+const clientes = {
+  labels: ["Novos", "Recorrentes"],
+  valores: [420, 842]
+};

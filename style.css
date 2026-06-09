@@ -1,5 +1,9 @@
 /* RESET */
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -130,6 +134,10 @@ body {
     transition: .2s;
 
     font-size: .95rem;
+
+    text-decoration: none;
+
+    display: block;
 
 }
 
@@ -267,15 +275,17 @@ body {
 }
 
 .grafico-card {
-
     background: white;
-
     padding: 20px;
-
     border-radius: 15px;
-
     box-shadow: var(--shadow);
 
+    min-height: 380px;
+}
+
+.grafico-card canvas {
+    width: 100% !important;
+    max-height: 300px;
 }
 
 .grafico-card h2 {
@@ -527,3 +537,4 @@ td {
     }
 
 }
+
